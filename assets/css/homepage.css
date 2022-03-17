@@ -1,0 +1,74 @@
+.home_container {
+    margin: 0;
+}
+
+.book-card {
+    border-radius: 5px;
+    height: 260px;
+    width: 150px;
+    background: rgb(95, 209, 230);
+    margin: 5px;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.book-card:hover {
+    background-image: linear-gradient(to top, rgba(95, 209, 230, 1), rgba(95, 209, 230, 0));
+    background-size: contain;
+    transition: 0.7s ease-in-out;
+}
+
+.book-card:hover .book-card-img,
+.book-card:hover .book-card-content {
+    opacity: 0.4;
+}
+
+.book-card-img {
+    height: 180px;
+    width: 150px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.book-card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.book-card-content {
+    text-align: center;
+    font-size: initial;
+    line-height: normal;
+}
+
+.book-card-overlay {
+    opacity: 0;
+}
+
+.book-card:hover .book-card-overlay {
+    transition: 0.7s;
+    opacity: 1;
+}
+
+#book-card-exchange-btn {
+    position: absolute;
+    margin-top: 80%;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+#book-card-exchange-btn button {
+    padding: 0;
+    align-self: flex-end;
+}
+
+#book-card-details-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

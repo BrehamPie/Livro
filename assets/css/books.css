@@ -1,0 +1,45 @@
+/* All Books */
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 350px;
+    grid-gap: 5px;
+    padding: 0px;
+}
+
+.searchbook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: sticky;
+    top: 48px;
+    z-index: 50;
+}
+
+#book_search_input {
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+}
+
+#book_search_input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#book_search_button {
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    margin: 0;
+}
+
+#book_search_button:focus {
+    box-shadow: none;
+}
+
+#book_search_button:hover {
+    color: white;
+    background: gray;
+}
