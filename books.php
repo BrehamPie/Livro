@@ -1,9 +1,8 @@
 <?php include './includes/header.inc.php';
 $totalPage = getSize('book') / 30;
-if(isset($_GET['query'])){
+if (isset($_GET['query'])) {
     $val = $_GET['query'];
-}
-else $val='';
+} else $val = '';
 ?>
 <main>
     <div class="container-fluid allbook">
@@ -57,7 +56,7 @@ else $val='';
                                     <?= $name; ?>
                                 </label>
                             </div>
-                            <span class="badge badge-primary badge-pill"><?=getCount('book_genre', 'genre_id', $id);?></span>
+                            <span class="badge badge-primary badge-pill"><?= getCount('book_genre', 'genre_id', $id); ?></span>
                         </li>
 
 
@@ -129,7 +128,7 @@ else $val='';
                         <h4 style="font-size: 2vw;">Find Your Desired Book</h4>
                     </div>
                     <form class="input-group form-container" style="width: 60%;" action="bookSearch.ajax.php" method="POST">
-                        <input type="text" class="form-control search-input" placeholder="Keyword" autofocus="autofocus" name="name" id='searchbox' oninput=bookSearch(this.value) value="<?=$val;?>">
+                        <input type="text" class="form-control search-input" placeholder="Keyword" autofocus="autofocus" name="name" id='searchbox' oninput=bookSearch(this.value) value="<?= $val; ?>">
                         <span class="input-group-btn">
                             <button class="btn btn-search" id="genre-search-button">
                                 <i class="fas fa-search"></i>
@@ -142,7 +141,7 @@ else $val='';
                 </div>
 
                 <div class="book-container">
-                   <!-- Books are filled here from ajax query. -->
+                    <!-- Books are filled here from ajax query. -->
                 </div>
             </div>
         </div>
@@ -155,7 +154,7 @@ else $val='';
 <?php
 include './includes/footer.inc.php';
 ?>
-<script src="./script.js"></script>
+<script src="./scripts/pagination.js"></script>
 <script src="./scripts/books.js"></script>
 <script>
     window.totalPages = Math.ceil(<?= $totalPage; ?>);

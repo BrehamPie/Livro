@@ -84,7 +84,7 @@ $totalPage = getSize('author') / 25;
 <?php
 include './includes/footer.inc.php';
 ?>
-<script src="./script.js"></script>
+<script src="./scripts/pagination.js"></script>
 <script src="./scripts/authors.js"></script>
 <script>
     window.totalPages = Math.ceil(<?= $totalPage; ?>);
