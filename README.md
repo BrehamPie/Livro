@@ -1,18 +1,18 @@
 # Livro
 A web based system to exchange old books.
 
-#Installation
+# Installation
 1. Install XAMPP or WAMPP.
 
 2. Open XAMPP Control panal and start Apache and MySQL .
 
 3. Download project from github(https://github.com/BrehamPie/Livro.git).
  
- OR follow gitbash commands
+   OR follow gitbash commands
 
-    >cd {path to xampp location}\htdocs\
+     >cd {path to xampp location}\htdocs\
 
-    >git clone https://github.com/BrehamPie/Livro.git
+     >git clone https://github.com/BrehamPie/Livro.git
 
 4. Go to 'localhost/phpmyadmin'.
 
