@@ -74,6 +74,5 @@ $totalPage = getSize('user') / 10;
 <script src="./scripts/users.js"></script>
 <script>
     window.totalPages = Math.ceil(<?= $totalPage; ?>);
-    console.log(window.totalPages);
     pagination(totalPages, <?= $page; ?>, 'users');
 </script>

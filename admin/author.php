@@ -65,7 +65,6 @@ if (isset($_GET['a_id'])) {
             var formData = new FormData(form);
             var action = '<?= $action; ?>';
             var id = '<?= $id; ?>';
-            console.log(formData);
             formData.append('action', action);
             formData.append('a_id', id);
             event.preventDefault();

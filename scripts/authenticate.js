@@ -30,7 +30,6 @@ $(document).ready(function() {
             processData: false,
             success: function(response) {
                 $('#errorMessage').addClass('text-center');
-                console.log(response);
                 var obj = JSON.parse(response);
                 if (obj['problem'] == 'ok') {
                     if (obj['role'] == '1') window.location.href = "./index.php";

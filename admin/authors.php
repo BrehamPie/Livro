@@ -68,7 +68,7 @@ $totalPage = getSize('author') / 10;
 <script src="script.js"></script>
 <script>
     window.totalPages = Math.ceil(<?= $totalPage; ?>);
-    console.log(window.totalPages);
+
     $(document).ready(function() {
         $('.adminTableTr').magnificPopup({
             type: 'image',

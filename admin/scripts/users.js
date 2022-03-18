@@ -4,7 +4,6 @@ function Change(id) {
     var x = $('#apply');
     if (keep.has(id)) keep.delete(id);
     else keep.set(id, 1);
-    console.log(keep);
     x.css({
         'display': 'inline'
     });

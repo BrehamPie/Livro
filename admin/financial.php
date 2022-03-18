@@ -170,7 +170,6 @@ include './includes/header.inc.php';
             var optionSelected = $("option:selected", this);
             var valueSelected = this.value;
             if (valueSelected == '') return;
-            console.log(valueSelected);
             $.ajax({
                 url: './ajax/finance.ajax.php',
                 type: 'post',
@@ -183,7 +182,6 @@ include './includes/header.inc.php';
             });
         });
         $('#newfin').on('click', function() {
-            console.log('clicked');
             var form = document.getElementById('transactionadd');
             var finance = new FormData(form);
             $.ajax({
@@ -193,7 +191,6 @@ include './includes/header.inc.php';
                 contentType: false,
                 processData: false,
                 success: function(response) {
-                    console.log(response);
                     $('#exampleModal2').modal('toggle');
                 }
             })
