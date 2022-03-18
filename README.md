@@ -1,5 +1,5 @@
 # Livro
-A web based system to exchange old books.
+A web based system to exchange old books.The System is built using HTML, CSS, JavaScript and PHP.
 
 # Installation
 1. Install XAMPP or WAMPP.
@@ -33,5 +33,15 @@ A web based system to exchange old books.
 4. jQuery 3.6
 5. MomentJS 2.22.2
 6. Magnific Popup JS 1.0 
+
+# Basic Functionalities
+1. User Login/ Registration
+2. Browse books based on author and genre.
+3. Dynamic Book Filtering.
+4. Subscribe to the system to borrow books.
+5. Donate books.
+6. Rating and Review System for Books.
+7. Detailed User Account.
+8. Interactive Admin Section.
 
 
